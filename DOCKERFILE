@@ -2,7 +2,7 @@ FROM golang:1.11
 
 LABEL maintainer="Ernesto"
 
-WORKDIR $GOPATH/src/spmapstatus/twitterexplorer/
+WORKDIR $GOPATH/src/twitterexplorer/
 
 COPY . .
 
