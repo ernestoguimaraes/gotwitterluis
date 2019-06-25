@@ -1,0 +1,15 @@
+#Use this file as sample to fill yup with your keys.
+#Rename it to appkeys.yaml to start use on application
+twitterkeys:
+  publicAccount: "BombeirosPMESP"
+  consumerkey: ""
+  consumersercret: ""
+  accesstoken: ""
+  accesstokensecret: ""
+luis:
+   appkey: ""
+   authkey: ""
+   domain: ""
+
+
+   

@@ -1,0 +1,190 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "TwitterUnderstanding",
+  "desc": "",
+  "culture": "pt-br",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Incidente"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Endereco",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Motivo",
+      "subLists": [
+        {
+          "canonicalForm": "Fogo",
+          "list": [
+            "incêndio"
+          ]
+        },
+        {
+          "canonicalForm": "Atropelamento",
+          "list": [
+            "atropelamento"
+          ]
+        },
+        {
+          "canonicalForm": "Colisao",
+          "list": [
+            "colisão"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "01h33 fogo em ed. industrial, rua amambai, 800, vila maria, nenhum solicitante menciona vítimas nem se o fogo estaria se alastrando para construções adjacentes, 8 viaturas foram disponibilizadas para o local. aguardando mais informações.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 30,
+          "endPos": 57
+        }
+      ]
+    },
+    {
+      "text": "03h02 colisão entre 2 autos seguido de capotamento de um deles, av. papa joão paulo i, 3645, pres. dutra, guarulhos, solicitantes mencionam 2 vítimas consciente, 3 viaturas foram disponibilizadas.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 64,
+          "endPos": 114
+        }
+      ]
+    },
+    {
+      "text": "04h53 atropelamento por auto, rua chico pontes, 1485, v. guilherme, são paulo, de acordo com solicitantes 1 vítima consciente, 1 viatura disponibilizada.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 30,
+          "endPos": 76
+        }
+      ]
+    },
+    {
+      "text": "06h08 capotamento de auto, rua leopoldo gotuzzo, 10 - cidade tiradentes, 1 vtr, pelo local 1 vítima, feminino, 38 anos, ferimentos leves, sos pelo cb ao ps guaianazes",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 27,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "06h25 fogo em residência térrea, rua dos baianos, 91 – itapevi, 3 vtrs, sem vítima, pelo local fogo extinto, 1 vítima, masculino, adulto, agitado, sem ferimentos, sos pelo cb ao ps central de itapevi",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 33,
+          "endPos": 61
+        }
+      ]
+    },
+    {
+      "text": "08h17 colisão de carro x moto, estrada de perus, 100 – perus. informações preliminares, 1 vítm, 1 vtr a caminho. aguardamos mais informações do local.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 31,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "10h53 atropelamento por carro, r. gazeta, 136 – jabaquara. informações preliminares, 1 vítm, idosa, 1 vtr a caminho. aguardamos mais informações do local.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 31,
+          "endPos": 56
+        }
+      ]
+    },
+    {
+      "text": "15h20 incêndio em casa térrea, r. alcatifa, 137 – cid lider. em um primeiro momento, não há informações de vítms, 5 vtrs a caminho. aguardamos mais informações do local.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 31,
+          "endPos": 58
+        }
+      ]
+    },
+    {
+      "text": "16h10 incêndio em comunidade, r. boa esperança, 10 – carapicuíba. informações preliminares, não há informações de vítms, 2 barracos em chamas, 4 vtrs no atendimento. aguardamos mais informações do local.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 30,
+          "endPos": 63
+        }
+      ]
+    },
+    {
+      "text": "17h18 atropelamento por ônibus, av álvaro ramos, 1332 – bélem. 3 vítms, sendo uma delas retirada das ferragens. 6 vtrs no atendimento. aguardamos mais informações do local.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 32,
+          "endPos": 60
+        }
+      ]
+    },
+    {
+      "text": "as 00h25 tivemos uma chamada para auxiliar num atropelamento por auto na av. guarapiranga, 3000, bairro do socorro, infelizmente o óbito da vítima foi constatado no local, força aos familiares nesse momento tão difícil.",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 73,
+          "endPos": 113
+        }
+      ]
+    },
+    {
+      "text": "as 21h25 o cb foi chamado para uma ocorrência de fogo em distribuidora de doces, av. eng. george corbisier, 1395, jabaquara, o fogo foi rapidamente extinto, sem vítimas, no auge da ocorrência 7 viaturas foram utilizadas. oco. totalmente finalizada",
+      "intent": "Incidente",
+      "entities": [
+        {
+          "entity": "Endereco",
+          "startPos": 81,
+          "endPos": 111
+        }
+      ]
+    }
+  ],
+  "settings": []
+}

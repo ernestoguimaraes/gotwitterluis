@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: twitterexplorer
+  labels:
+    app: twitterexplorer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: twitterexplorer
+  template:
+    metadata:
+      labels:
+        app: twitterexplorer
+    spec:      
+      containers:
+      - name: twitterexplorer
+        image: <you image repository>/go/twitterexplorer
+        ports:
+        - containerPort: 8080
+
+#Added this to expose the access to external url
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: twitterloadbalancer  
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+  selector:
+    app: twitterexplorer
